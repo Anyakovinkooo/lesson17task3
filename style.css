@@ -15,63 +15,25 @@ td {
 table {
   margin: 16px;
 }
-table tr:nth-child(even) td:nth-child(odd) {
+tr:nth-child(odd) td:nth-child(even) {
   background-color: black;
 }
-table tr:nth-child(odd) td:nth-child(even) {
+tr:nth-child(even) td:nth-child(odd) {
   background-color: black;
 }
-table td:nth-child(even) {
-  background-color: white;
+td:first-child {
+  background-color: white !important;
+  border: none;
 }
-table tr:nth-child(odd) {
-  background-color: white;
+td:last-child {
+  background-color: white !important;
+  border: none;
 }
-table tr:nth-child(1) td:nth-child(even) {
-  background-color: transparent;
+tr:first-child > td {
+  background-color: white !important;
+  border: none;
 }
-table tr:nth-child(even) td:nth-child(1) {
-  background-color: transparent;
-}
-table tr:nth-child(10) td:nth-child(odd) {
-  background-color: transparent;
-}
-table tr:nth-child(odd) td:nth-child(10) {
-  background-color: transparent;
-}
-table tr:nth-child(odd) td:nth-child(10) {
-  border-bottom: 1px solid transparent;
-}
-table tr:nth-child(even) td:nth-child(10) {
-  border-bottom: 1px solid transparent;
-}
-table tr:nth-child(10) td:nth-child(10) {
-  border-bottom: 1px solid black;
-}
-table tr:nth-child(1) td:nth-child(odd) {
-  border-right: 1px solid transparent;
-}
-table tr:nth-child(1) td:nth-child(even) {
-  border-right: 1px solid transparent;
-}
-table tr:nth-child(1) td:nth-child(10) {
-  border-right: 1px solid black;
-}
-table tr:nth-child(even) td:nth-child(1) {
-  border-bottom: 1px solid transparent;
-}
-table tr:nth-child(odd) td:nth-child(1) {
-  border-bottom: 1px solid transparent;
-}
-table tr:nth-child(10) td:nth-child(1) {
-  border-bottom: 1px solid black;
-}
-table tr:nth-child(10) td:nth-child(odd) {
-  border-right: 1px solid transparent;
-}
-table tr:nth-child(10) td:nth-child(even) {
-  border-right: 1px solid transparent;
-}
-table tr:nth-child(10) td:nth-child(10) {
-  border-right: 1px solid black;
+tr:last-child > td {
+  background-color: white !important;
+  border: none;
 }
